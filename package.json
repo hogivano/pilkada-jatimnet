@@ -6,14 +6,26 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@zeit/next-sass": "^1.0.1",
+    "bulma": "^0.8.0",
+    "bulma-carousel": "^4.0.4",
     "next": "^9.2.1",
+    "next-seo": "^3.4.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-geolocated": "^3.0.1",
+    "react-responsive": "^8.0.3"
   }
 }

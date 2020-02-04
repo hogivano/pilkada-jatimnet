@@ -1,0 +1,31 @@
+.img-headline
+  overflow: hidden
+
+.img-headline img
+  transition: transform .5s, filter 1.0s ease
+  transform-origin: center center
+  filter: blur(5px)
+
+.headline-title
+  z-index: 999
+  width: 100%
+
+.headline-title h5
+  margin-bottom: 10px
+
+.img-headline .bottom-line
+  display: block
+  width: 50%
+  margin-top: 10px
+  margin: auto
+  border-bottom: 1px solid #ccc
+
+.img-headline:hover
+  cursor: pointer
+
+.img-headline:hover::after
+  opacity: 0
+
+.img-headline:hover img
+  transform: scale(1.1)
+  filter: blur(0px)

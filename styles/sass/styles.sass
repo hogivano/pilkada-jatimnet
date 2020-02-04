@@ -1,0 +1,94 @@
+@import "./header.sass"
+@import "./index/headline.sass"
+@import "./index/latest-news.sass"
+@import "./index/category.sass"
+
+.border-black1px
+  border: 1px solid black
+
+.border-white1px
+  border: 1px solid white
+
+.overlay-black60
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.6)
+  opacity: 1
+  transition: all 1s ease
+
+.overlay-black60:hover
+  background: rgba(0, 0, 0, 0.3)
+  opacity: 1
+
+.overlay-primary90
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(65, 195, 213, 0.9)
+  opacity: 1
+  transition: all 1s ease
+
+.overlay-primary90:hover
+  background: rgba(0, 0, 0, 0.5)
+  opacity: 1
+
+.overlay-secondary90
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(66, 185, 245, 0.9)
+  opacity: 1
+  transition: all 1s ease
+
+.overlay-secondary90:hover
+  background: rgba(0, 0, 0, 0.5)
+  opacity: 1
+
+.absolute-center
+  padding: 10px 20px
+  width: 100%
+  height: 100%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  position: absolute
+
+.absolute-bottom-left
+  padding: 10px 20px
+  width: 100%
+  height: 100%
+  bottom: 0
+  left: 0
+  position: absolute
+
+.is-vertical-center
+  display: flex
+  align-items: center
+
+.bottom-line-black
+  display: block
+  width: 100%
+  margin: auto
+  border-bottom: 1px solid #4f4f4f
+
+.bottom-line-black-50
+  display: block
+  width: 50%
+  margin: auto
+  border-bottom: 1px solid black
+
+.elipsed-2-line
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+
+.elipsed-2-line
+  -webkit-line-clamp: 2

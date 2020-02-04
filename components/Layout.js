@@ -1,14 +1,15 @@
 import Header from './Header'
-
-const layoutStyle = {
-  margin: 20,
-  padding: 20
-}
+import Footer from './Footer'
+import '../styles/sass/base-style.sass'
+import '../styles/sass/styles.sass'
 
 const Layout = props => (
-  <div style={layoutStyle}>
+  <div className="bg-white-bone">
     <Header />
+    <section className="container">
     {props.children}
+    </section>
+    <Footer/>
   </div>
 )
 
