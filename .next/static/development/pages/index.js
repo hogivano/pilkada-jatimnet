@@ -17,13 +17,80 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Footer = function Footer() {
   return __jsx("section", {
-    className: "footer container",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
-  }, "Ini adalah footer");
+  }, __jsx("div", {
+    className: "m-h-20 m-v-20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "columns",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "column is-one-fifth align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "https://jatimnet.com/_nuxt/img/8c22f58.png",
+    className: "h-40px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "column align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "is-pulled-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://jatimnet.com/kontak",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Kontak Kami"), __jsx("a", {
+    href: "https://jatimnet.com/pedoman-media-siber",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Pemodaman Penulisan Siber"), __jsx("a", {
+    href: "https://jatimnet.com/kode-etik",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Kode Etik Jurnalistik"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -79,7 +146,7 @@ var Header = function Header() {
     __self: this
   }, __jsx("a", {
     className: "navbar-item m-auto",
-    href: "https://bulma.io",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -114,41 +181,50 @@ var Header = function Header() {
       lineNumber: 19
     },
     __self: this
-  }, __jsx("input", {
-    className: "input is-rounded",
-    type: "email",
-    placeholder: "cari berita pilkada",
+  }, __jsx("form", {
+    method: "get",
+    action: "https://jatimnet.com/cari",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }), __jsx("span", {
-    className: "icon is-medium is-left",
+  }, __jsx("input", {
+    className: "input is-rounded",
+    type: "text",
+    name: "q",
+    placeholder: "cari berita pilkada",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
+    },
+    __self: this
+  })), __jsx("span", {
+    className: "icon is-medium is-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
     },
     __self: this
   }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faSearch"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   })), __jsx("span", {
     className: "icon is-small is-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, __jsx("i", {
     className: "fas fa-search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: this
   })))))));
@@ -171,13 +247,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sass/base-style.sass */ "./styles/sass/base-style.sass");
-/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/sass/styles.sass */ "./styles/sass/styles.sass");
-/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_geolocated__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-geolocated */ "./node_modules/react-geolocated/dist-modules/index.js");
+/* harmony import */ var react_geolocated__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_geolocated__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/sass/base-style.sass */ "./styles/sass/base-style.sass");
+/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/sass/styles.sass */ "./styles/sass/styles.sass");
+/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -188,32 +267,109 @@ var Layout = function Layout(props) {
     className: "bg-white-bone",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }), __jsx("section", {
-    className: "container",
+    className: "container p-v-20",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, props.children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/index/CategoryNews.js":
+/*!******************************************!*\
+  !*** ./components/index/CategoryNews.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _item_CategoryNewsItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryNewsItem */ "./components/item/CategoryNewsItem.js");
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/index/CategoryNews.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var CategoryNews = function CategoryNews() {
+  var list = [];
+
+  for (var i = 0; i < 6; i++) {
+    list.push(__jsx("div", {
+      className: "column",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, __jsx(_item_CategoryNewsItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    })));
+  }
+
+  return __jsx("section", {
+    className: "category-news w-100 m-v-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "columns w-100",
+    style: {
+      display: 'grid',
+      'grid-template-columns': '50% 50%',
+      'grid-auto-flow': 'dense'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, list), __jsx("div", {
+    className: "w-100 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("button", {
+    "class": "button is-primary round-20px is-outlined",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Tampilkan Lagi")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CategoryNews);
 
 /***/ }),
 
@@ -489,21 +645,21 @@ var LatestNews = function LatestNews() {
     });
   });
   return __jsx("section", {
-    className: "latest-news",
+    className: "latest-news bg-dark",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
   }, __jsx("h2", {
-    className: "font-20 font-lato m-b-15",
+    className: "font-20 font-lato m-b-15 color-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }, "Berita Terbaru"), __jsx("div", {
-    className: "bottom-line-black",
+    className: "bottom-line-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -520,6 +676,49 @@ var LatestNews = function LatestNews() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LatestNews);
+
+/***/ }),
+
+/***/ "./components/index/ListCategory.js":
+/*!******************************************!*\
+  !*** ./components/index/ListCategory.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryItem */ "./components/item/CategoryItem.js");
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/index/ListCategory.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var ListCategory = function ListCategory() {
+  var numbers = ['Kota Surabaya', 'Kota Sidoarjo', 'Kota Banyuwangi', 'Kab Probolinggo', 'Kota Gresik'];
+  var listItems = numbers.map(function (number) {
+    return __jsx(_item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      title: number,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      },
+      __self: this
+    });
+  });
+  return __jsx("section", {
+    className: "category-list w-100 m-t-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, listItems);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ListCategory);
 
 /***/ }),
 
@@ -553,6 +752,177 @@ var CategoryItem = function CategoryItem(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CategoryItem);
+
+/***/ }),
+
+/***/ "./components/item/CategoryNewsItem.js":
+/*!*********************************************!*\
+  !*** ./components/item/CategoryNewsItem.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/item/CategoryNewsItem.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var CategoryNewsItem = function CategoryNewsItem() {
+  return __jsx("a", {
+    href: "#",
+    className: "category-news-item-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "card",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("header", {
+    className: "card-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "div-front-img h-200px w-100",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "https://i0.wp.com/api.jatimnet.com/jinet/assets/media/filer_public_thumbnails/filer_public/48/6f/486f8372-e2af-425a-b5dd-7abb105b060f/penculikan_anak-01.jpg__780x439_q85_subsampling-2.jpg",
+    className: "w-100 h-200px object-cover front-img",
+    alt: "Ini adalah gambar test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }))), __jsx("div", {
+    className: "card-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("label", {
+    className: "color-secondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Kota Surabaya"), __jsx("h5", {
+    className: "elipsed-2-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Persyaratan Calon Pasangan \"Djamas\" Jalur Independen Ditolak KPU Jember")), __jsx("p", {
+    className: "font-nunito",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "T Pelindo III (Persero) membuka fasilitas baru peribadatan upacara melasti di Pelabuhan Benoa, Bali."))), __jsx("footer", {
+    className: "card-footer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "column is-four-fifths",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "w-100 columns p-h-10 p-v-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "https://i0.wp.com/api.jatimnet.com/jinet/assets/media/user_profile/user_profile/picture/Bae.png",
+    className: "circle-img-50",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "p-h-10 align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "m-b-0 lh-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "Hendriyan Ogivano"), __jsx("label", {
+    className: "color-dark-grey font-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, "Reporter")))), __jsx("div", {
+    className: "column align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
+    className: "color-secondary is-pulled-right ",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faArrowRight"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CategoryNewsItem);
 
 /***/ }),
 
@@ -753,14 +1123,14 @@ var LatestNewsItem = function LatestNewsItem(props) {
     },
     __self: this
   }, __jsx("label", {
-    className: "color-primary",
+    className: "color-secondary",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, "Kota Surabaya"), __jsx("h4", {
-    className: "elipsed-2-line has-text-weight-semibold",
+  }, "Kota Surabaya"), __jsx("h5", {
+    className: "elipsed-2-line has-text-weight-semibold color-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -770,49 +1140,6 @@ var LatestNewsItem = function LatestNewsItem(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LatestNewsItem);
-
-/***/ }),
-
-/***/ "./components/list/Category.js":
-/*!*************************************!*\
-  !*** ./components/list/Category.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryItem */ "./components/item/CategoryItem.js");
-var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/list/Category.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var ListCategory = function ListCategory() {
-  var numbers = ['Kota Surabaya', 'Kota Sidoarjo', 'Kota Banyuwangi', 'Kab Probolinggo', 'Kota Gresik'];
-  var listItems = numbers.map(function (number) {
-    return __jsx(_item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      title: number,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      },
-      __self: this
-    });
-  });
-  return __jsx("section", {
-    className: "category-list w-100",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, listItems);
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ListCategory);
 
 /***/ }),
 
@@ -2519,7 +2846,7 @@ var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMA
   mark: noop$1,
   measure: noop$1
 };
-var preamble = "FA \"5.12.0\"";
+var preamble = "FA \"5.12.1\"";
 
 var begin = function begin(name) {
   p.mark("".concat(preamble, " ").concat(name, " begins"));
@@ -3413,6 +3740,7 @@ function replaceForPosition(node, position) {
     var styles = WINDOW.getComputedStyle(node, position);
     var fontFamily = styles.getPropertyValue('font-family').match(FONT_FAMILY_PATTERN);
     var fontWeight = styles.getPropertyValue('font-weight');
+    var content = styles.getPropertyValue('content');
 
     if (alreadyProcessedPseudoElement && !fontFamily) {
       // If we've already processed it but the current computed style does not result in a font-family,
@@ -3420,8 +3748,7 @@ function replaceForPosition(node, position) {
       // removed. So we now should delete the icon.
       node.removeChild(alreadyProcessedPseudoElement);
       return resolve();
-    } else if (fontFamily) {
-      var content = styles.getPropertyValue('content');
+    } else if (fontFamily && content !== 'none' && content !== '') {
       var prefix = ~['Solid', 'Regular', 'Light', 'Duotone', 'Brands'].indexOf(fontFamily[1]) ? STYLE_TO_PREFIX[fontFamily[1].toLowerCase()] : FONT_WEIGHT_TO_PREFIX[fontWeight];
       var hexValue = toHex(content.length === 3 ? content.substr(1, 1) : content);
       var iconName = byUnicode(prefix, hexValue);
@@ -5785,7 +6112,7 @@ var faClipboardList = {
 var faClock = {
   prefix: 'fas',
   iconName: 'clock',
-  icon: [512, 512, [], "f017", "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"]
+  icon: [512, 512, [], "f017", "M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"]
 };
 var faClone = {
   prefix: 'fas',
@@ -6615,7 +6942,7 @@ var faFolderOpen = {
 var faFolderPlus = {
   prefix: 'fas',
   iconName: 'folder-plus',
-  icon: [512, 512, [], "f65e", "M464 128H272l-64-64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm-96 168c0 8.84-7.16 16-16 16h-72v72c0 8.84-7.16 16-16 16h-16c-8.84 0-16-7.16-16-16v-72h-72c-8.84 0-16-7.16-16-16v-16c0-8.84 7.16-16 16-16h72v-72c0-8.84 7.16-16 16-16h16c8.84 0 16 7.16 16 16v72h72c8.84 0 16 7.16 16 16v16z"]
+  icon: [512, 512, [], "f65e", "M464,128H272L208,64H48A48,48,0,0,0,0,112V400a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V176A48,48,0,0,0,464,128ZM359.5,296a16,16,0,0,1-16,16h-64v64a16,16,0,0,1-16,16h-16a16,16,0,0,1-16-16V312h-64a16,16,0,0,1-16-16V280a16,16,0,0,1,16-16h64V200a16,16,0,0,1,16-16h16a16,16,0,0,1,16,16v64h64a16,16,0,0,1,16,16Z"]
 };
 var faFont = {
   prefix: 'fas',
@@ -18398,6 +18725,214 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ }),
 
+/***/ "./node_modules/react-geolocated/dist-modules/index.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/react-geolocated/dist-modules/index.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.geoPropTypes = exports.geolocated = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var getDisplayName = function getDisplayName(WrappedComponent) {
+  return "Geolocated(".concat(WrappedComponent.displayName || WrappedComponent.name || "Component", ")");
+};
+
+var geolocated = function geolocated() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$positionOptions = _ref.positionOptions,
+      positionOptions = _ref$positionOptions === void 0 ? {
+    enableHighAccuracy: true,
+    maximumAge: 0,
+    timeout: Infinity
+  } : _ref$positionOptions,
+      _ref$isOptimisticGeol = _ref.isOptimisticGeolocationEnabled,
+      isOptimisticGeolocationEnabled = _ref$isOptimisticGeol === void 0 ? true : _ref$isOptimisticGeol,
+      _ref$userDecisionTime = _ref.userDecisionTimeout,
+      userDecisionTimeout = _ref$userDecisionTime === void 0 ? null : _ref$userDecisionTime,
+      _ref$suppressLocation = _ref.suppressLocationOnMount,
+      suppressLocationOnMount = _ref$suppressLocation === void 0 ? false : _ref$suppressLocation,
+      _ref$watchPosition = _ref.watchPosition,
+      watchPosition = _ref$watchPosition === void 0 ? false : _ref$watchPosition,
+      _ref$geolocationProvi = _ref.geolocationProvider,
+      geolocationProvider = _ref$geolocationProvi === void 0 ? typeof navigator !== "undefined" && navigator.geolocation : _ref$geolocationProvi;
+
+  return function (WrappedComponent) {
+    var _temp;
+
+    var result = (_temp =
+    /*#__PURE__*/
+    function (_Component) {
+      _inherits(Geolocated, _Component);
+
+      function Geolocated(props) {
+        var _this;
+
+        _classCallCheck(this, Geolocated);
+
+        _this = _possibleConstructorReturn(this, _getPrototypeOf(Geolocated).call(this, props));
+
+        _defineProperty(_assertThisInitialized(_this), "isCurrentlyMounted", false);
+
+        _defineProperty(_assertThisInitialized(_this), "cancelUserDecisionTimeout", function () {
+          if (_this.userDecisionTimeoutId) {
+            clearTimeout(_this.userDecisionTimeoutId);
+          }
+        });
+
+        _defineProperty(_assertThisInitialized(_this), "onPositionError", function (positionError) {
+          _this.cancelUserDecisionTimeout();
+
+          if (_this.isCurrentlyMounted) {
+            _this.setState({
+              coords: null,
+              isGeolocationEnabled: false,
+              positionError: positionError
+            });
+          }
+
+          if (_this.props.onError) {
+            _this.props.onError(positionError);
+          }
+        });
+
+        _defineProperty(_assertThisInitialized(_this), "onPositionSuccess", function (position) {
+          _this.cancelUserDecisionTimeout();
+
+          if (_this.isCurrentlyMounted) {
+            _this.setState({
+              coords: position.coords,
+              isGeolocationEnabled: true,
+              positionError: null
+            });
+          }
+
+          if (_this.props.onSuccess) {
+            _this.props.onSuccess(position);
+          }
+        });
+
+        _defineProperty(_assertThisInitialized(_this), "getLocation", function () {
+          if (!geolocationProvider || !geolocationProvider.getCurrentPosition || !geolocationProvider.watchPosition) {
+            throw new Error("The provided geolocation provider is invalid");
+          }
+
+          var funcPosition = (watchPosition ? geolocationProvider.watchPosition : geolocationProvider.getCurrentPosition).bind(geolocationProvider);
+
+          if (userDecisionTimeout) {
+            _this.userDecisionTimeoutId = setTimeout(function () {
+              _this.onPositionError();
+            }, userDecisionTimeout);
+          }
+
+          _this.watchId = funcPosition(_this.onPositionSuccess, _this.onPositionError, positionOptions);
+        });
+
+        _this.state = {
+          coords: null,
+          isGeolocationAvailable: Boolean(geolocationProvider),
+          isGeolocationEnabled: isOptimisticGeolocationEnabled,
+          positionError: null
+        };
+        return _this;
+      }
+
+      _createClass(Geolocated, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+          this.isCurrentlyMounted = true;
+
+          if (!suppressLocationOnMount) {
+            this.getLocation();
+          }
+        }
+      }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+          this.isCurrentlyMounted = false;
+          this.cancelUserDecisionTimeout();
+
+          if (watchPosition) {
+            geolocationProvider.clearWatch(this.watchId);
+          }
+        }
+      }, {
+        key: "render",
+        value: function render() {
+          return _react["default"].createElement(WrappedComponent, _extends({}, this.state, this.props));
+        }
+      }]);
+
+      return Geolocated;
+    }(_react.Component), _temp);
+    result.displayName = getDisplayName(WrappedComponent);
+    result.propTypes = {
+      onError: _propTypes["default"].func,
+      onSuccess: _propTypes["default"].func
+    };
+    return result;
+  };
+};
+
+exports.geolocated = geolocated;
+var geoPropTypes = {
+  coords: _propTypes["default"].shape({
+    latitude: _propTypes["default"].number,
+    longitude: _propTypes["default"].number,
+    altitude: _propTypes["default"].number,
+    accuracy: _propTypes["default"].number,
+    altitudeAccuracy: _propTypes["default"].number,
+    heading: _propTypes["default"].number,
+    speed: _propTypes["default"].number
+  }),
+  isGeolocationAvailable: _propTypes["default"].bool,
+  isGeolocationEnabled: _propTypes["default"].bool,
+  positionError: _propTypes["default"].shape({
+    code: _propTypes["default"].oneOf([1, 2, 3]),
+    message: _propTypes["default"].string
+  }),
+  watchPosition: _propTypes["default"].bool
+};
+exports.geoPropTypes = geoPropTypes;
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -20525,10 +21060,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_index_Headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/index/Headline */ "./components/index/Headline.js");
 /* harmony import */ var _components_index_LatestNews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/index/LatestNews */ "./components/index/LatestNews.js");
-/* harmony import */ var _components_list_Category__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/list/Category */ "./components/list/Category.js");
+/* harmony import */ var _components_index_ListCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/index/ListCategory */ "./components/index/ListCategory.js");
+/* harmony import */ var _components_index_CategoryNews__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/index/CategoryNews */ "./components/index/CategoryNews.js");
 var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -20538,68 +21075,63 @@ var Index = function Index() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx(_components_index_Headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }), __jsx("div", {
     className: "columns is-gapless m-t-20",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("div", {
     className: "column is-three-fifths",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
-  }, __jsx(_components_list_Category__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_index_ListCategory__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "m-t-20",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
+    },
+    __self: this
+  }), __jsx(_components_index_CategoryNews__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: this
   })), __jsx("div", {
     className: "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, __jsx(_components_index_LatestNews__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
-  }), "Ini adalah bagian berita terbaru")), __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "Hendriyan Ogivano"), __jsx("label", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Ini adalah label"));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 1:
+/***/ 6:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fhogivano%2FReactProject%2Fpilkada-jatimnet%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
@@ -20622,5 +21154,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -110,13 +110,80 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Footer = () => {
   return __jsx("section", {
-    className: "footer container",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: undefined
-  }, "Ini adalah footer");
+  }, __jsx("div", {
+    className: "m-h-20 m-v-20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "columns",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "column is-one-fifth align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: "https://jatimnet.com/_nuxt/img/8c22f58.png",
+    className: "h-40px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  })), __jsx("div", {
+    className: "column align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "is-pulled-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "https://jatimnet.com/kontak",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, "Kontak Kami"), __jsx("a", {
+    href: "https://jatimnet.com/pedoman-media-siber",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "Pemodaman Penulisan Siber"), __jsx("a", {
+    href: "https://jatimnet.com/kode-etik",
+    className: "color-secondary font-15 m-h-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "Kode Etik Jurnalistik"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -173,7 +240,7 @@ const Header = () => __jsx("header", {
   __self: undefined
 }, __jsx("a", {
   className: "navbar-item m-auto",
-  href: "https://bulma.io",
+  href: "/",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13
@@ -208,41 +275,50 @@ const Header = () => __jsx("header", {
     lineNumber: 19
   },
   __self: undefined
-}, __jsx("input", {
-  className: "input is-rounded",
-  type: "email",
-  placeholder: "cari berita pilkada",
+}, __jsx("form", {
+  method: "get",
+  action: "https://jatimnet.com/cari",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 20
   },
   __self: undefined
-}), __jsx("span", {
-  className: "icon is-medium is-left",
+}, __jsx("input", {
+  className: "input is-rounded",
+  type: "text",
+  name: "q",
+  placeholder: "cari berita pilkada",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21
+  },
+  __self: undefined
+})), __jsx("span", {
+  className: "icon is-medium is-left",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
   },
   __self: undefined
 }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
   icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faSearch"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 24
   },
   __self: undefined
 })), __jsx("span", {
   className: "icon is-small is-right",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 26
   },
   __self: undefined
 }, __jsx("i", {
   className: "fas fa-search",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
+    lineNumber: 27
   },
   __self: undefined
 })))))));
@@ -264,13 +340,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/sass/base-style.sass */ "./styles/sass/base-style.sass");
-/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/sass/styles.sass */ "./styles/sass/styles.sass");
-/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_geolocated__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-geolocated */ "react-geolocated");
+/* harmony import */ var react_geolocated__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_geolocated__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/sass/base-style.sass */ "./styles/sass/base-style.sass");
+/* harmony import */ var _styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_base_style_sass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/sass/styles.sass */ "./styles/sass/styles.sass");
+/* harmony import */ var _styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_styles_sass__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -280,31 +359,108 @@ const Layout = props => __jsx("div", {
   className: "bg-white-bone",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 9
   },
   __self: undefined
 }), __jsx("section", {
-  className: "container",
+  className: "container p-v-20",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 10
   },
   __self: undefined
 }, props.children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 13
   },
   __self: undefined
 }));
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/index/CategoryNews.js":
+/*!******************************************!*\
+  !*** ./components/index/CategoryNews.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _item_CategoryNewsItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryNewsItem */ "./components/item/CategoryNewsItem.js");
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/index/CategoryNews.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const CategoryNews = () => {
+  var list = [];
+
+  for (var i = 0; i < 6; i++) {
+    list.push(__jsx("div", {
+      className: "column",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: undefined
+    }, __jsx(_item_CategoryNewsItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: undefined
+    })));
+  }
+
+  return __jsx("section", {
+    className: "category-news w-100 m-v-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "columns w-100",
+    style: {
+      display: 'grid',
+      'grid-template-columns': '50% 50%',
+      'grid-auto-flow': 'dense'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, list), __jsx("div", {
+    className: "w-100 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx("button", {
+    class: "button is-primary round-20px is-outlined",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, "Tampilkan Lagi")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CategoryNews);
 
 /***/ }),
 
@@ -578,21 +734,21 @@ const LatestNews = () => {
     __self: undefined
   }));
   return __jsx("section", {
-    className: "latest-news",
+    className: "latest-news bg-dark",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
   }, __jsx("h2", {
-    className: "font-20 font-lato m-b-15",
+    className: "font-20 font-lato m-b-15 color-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: undefined
   }, "Berita Terbaru"), __jsx("div", {
-    className: "bottom-line-black",
+    className: "bottom-line-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -609,6 +765,47 @@ const LatestNews = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LatestNews);
+
+/***/ }),
+
+/***/ "./components/index/ListCategory.js":
+/*!******************************************!*\
+  !*** ./components/index/ListCategory.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryItem */ "./components/item/CategoryItem.js");
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/index/ListCategory.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const ListCategory = () => {
+  const numbers = ['Kota Surabaya', 'Kota Sidoarjo', 'Kota Banyuwangi', 'Kab Probolinggo', 'Kota Gresik'];
+  const listItems = numbers.map(number => __jsx(_item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: number,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }));
+  return __jsx("section", {
+    className: "category-list w-100 m-t-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, listItems);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ListCategory);
 
 /***/ }),
 
@@ -642,6 +839,179 @@ const CategoryItem = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CategoryItem);
+
+/***/ }),
+
+/***/ "./components/item/CategoryNewsItem.js":
+/*!*********************************************!*\
+  !*** ./components/item/CategoryNewsItem.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "@fortawesome/react-fontawesome");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/item/CategoryNewsItem.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const CategoryNewsItem = () => {
+  return __jsx("a", {
+    href: "#",
+    className: "category-news-item-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "card",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("header", {
+    className: "card-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "div-front-img h-200px w-100",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: "https://i0.wp.com/api.jatimnet.com/jinet/assets/media/filer_public_thumbnails/filer_public/48/6f/486f8372-e2af-425a-b5dd-7abb105b060f/penculikan_anak-01.jpg__780x439_q85_subsampling-2.jpg",
+    className: "w-100 h-200px object-cover front-img",
+    alt: "Ini adalah gambar test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }))), __jsx("div", {
+    className: "card-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("label", {
+    className: "color-secondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, "Kota Surabaya"), __jsx("h5", {
+    className: "elipsed-2-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, "Persyaratan Calon Pasangan \"Djamas\" Jalur Independen Ditolak KPU Jember")), __jsx("p", {
+    className: "font-nunito",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, "T Pelindo III (Persero) membuka fasilitas baru peribadatan upacara melasti di Pelabuhan Benoa, Bali."))), __jsx("footer", {
+    className: "card-footer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "column is-four-fifths",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "w-100 columns p-h-10 p-v-10",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: "https://i0.wp.com/api.jatimnet.com/jinet/assets/media/user_profile/user_profile/picture/Bae.png",
+    className: "circle-img-50",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "p-h-10 align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, __jsx("p", {
+    className: "m-b-0 lh-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, "Hendriyan Ogivano"), __jsx("label", {
+    className: "color-dark-grey font-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }, "Reporter")))), __jsx("div", {
+    className: "column align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
+    className: "color-secondary is-pulled-right ",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faArrowRight"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CategoryNewsItem);
 
 /***/ }),
 
@@ -842,14 +1212,14 @@ const LatestNewsItem = props => {
     },
     __self: undefined
   }, __jsx("label", {
-    className: "color-primary",
+    className: "color-secondary",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: undefined
-  }, "Kota Surabaya"), __jsx("h4", {
-    className: "elipsed-2-line has-text-weight-semibold",
+  }, "Kota Surabaya"), __jsx("h5", {
+    className: "elipsed-2-line has-text-weight-semibold color-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -859,47 +1229,6 @@ const LatestNewsItem = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LatestNewsItem);
-
-/***/ }),
-
-/***/ "./components/list/Category.js":
-/*!*************************************!*\
-  !*** ./components/list/Category.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../item/CategoryItem */ "./components/item/CategoryItem.js");
-var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/components/list/Category.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const ListCategory = () => {
-  const numbers = ['Kota Surabaya', 'Kota Sidoarjo', 'Kota Banyuwangi', 'Kab Probolinggo', 'Kota Gresik'];
-  const listItems = numbers.map(number => __jsx(_item_CategoryItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: number,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }));
-  return __jsx("section", {
-    className: "category-list w-100",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, listItems);
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ListCategory);
 
 /***/ }),
 
@@ -2637,10 +2966,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_index_Headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/index/Headline */ "./components/index/Headline.js");
 /* harmony import */ var _components_index_LatestNews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/index/LatestNews */ "./components/index/LatestNews.js");
-/* harmony import */ var _components_list_Category__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/list/Category */ "./components/list/Category.js");
+/* harmony import */ var _components_index_ListCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/index/ListCategory */ "./components/index/ListCategory.js");
+/* harmony import */ var _components_index_CategoryNews__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/index/CategoryNews */ "./components/index/CategoryNews.js");
 var _jsxFileName = "/home/hogivano/ReactProject/pilkada-jatimnet/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2650,61 +2981,56 @@ const Index = () => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx(_components_index_Headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: undefined
   }), __jsx("div", {
     className: "columns is-gapless m-t-20",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("div", {
     className: "column is-three-fifths",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
-  }, __jsx(_components_list_Category__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_index_ListCategory__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "m-t-20",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
+    },
+    __self: undefined
+  }), __jsx(_components_index_CategoryNews__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: undefined
   })), __jsx("div", {
     className: "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx(_components_index_LatestNews__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: undefined
-  }), "Ini adalah bagian berita terbaru")), __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, "Hendriyan Ogivano"), __jsx("label", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, "Ini adalah label"));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -2733,7 +3059,7 @@ const Index = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2852,6 +3178,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-geolocated":
+/*!***********************************!*\
+  !*** external "react-geolocated" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-geolocated");
 
 /***/ }),
 

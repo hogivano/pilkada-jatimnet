@@ -8,11 +8,11 @@ const LatestNews = () => {
   )
 
   return (
-    <section className="latest-news">
-      <h2 className="font-20 font-lato m-b-15">
+    <section className="latest-news bg-dark">
+      <h2 className="font-20 font-lato m-b-15 color-white">
         Berita Terbaru
       </h2>
-      <div className="bottom-line-black">
+      <div className="bottom-line-white">
       </div>
       <div className="latest-news-list m-v-20">
         {listItems}

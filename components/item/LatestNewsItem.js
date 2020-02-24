@@ -10,12 +10,12 @@ const LatestNewsItem = (props) => {
           </p>
         </figure>
         <div className="media-content">
-          <label className="color-primary">
+          <label className="color-secondary">
             Kota Surabaya
           </label>
-          <h4 className="elipsed-2-line has-text-weight-semibold">
+          <h5 className="elipsed-2-line has-text-weight-semibold color-white">
             Bawa 40 Kilogram Sabu-sabu, 2 WNA Malaysia Ditangkap askals aaks
-          </h4>
+          </h5>
         </div>
       </article>
     </Link>
