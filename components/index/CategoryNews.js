@@ -15,7 +15,7 @@ const CategoryNews = () => {
         {list}
       </div>
       <div className="w-100 text-center">
-        <button class="button is-primary round-20px is-outlined">Tampilkan Lagi</button>
+        <button className="button is-primary round-20px is-outlined">Tampilkan Lagi</button>
       </div>
     </section>
   )

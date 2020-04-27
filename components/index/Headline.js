@@ -1,11 +1,13 @@
 import HeadlineItemLeft from '../item/HeadlineItemLeft'
 import HeadlineItemRight from '../item/HeadlineItemRight'
+import fetch from 'isomorphic-unfetch'
 
-export default function Headline(){
+function Headline({ head }) {
   return (
     <div className="columns is-gapless m-b-0 lh-0">
       <div className="column is-three-fifths img-headline p-relative h-350px m-b-0">
         <HeadlineItemLeft />
+        { head }
       </div>
       <div className="column">
         <div className="columns lh-0 m-b-0 is-gapless">
@@ -60,3 +62,12 @@ export default function Headline(){
     </div>
   )
 }
+
+Headline.getInitialProps = async () => {
+  const res = await fetch('https://api.jatimnet.com/jinetapi/news?is_headline&rows=1')
+  const json = await res.json()
+  console.log(json)
+  return { head: json.count }
+}
+
+export default Headline
